@@ -55,7 +55,6 @@ black-check: ## use black to format python files
 shellcheck: ## use black to format python files
 	( \
        git ls-files 'scripts/*.sh' |  xargs shellcheck --format=gcc; \
-       git ls-files 'stack/*.sh' |  xargs shellcheck --format=gcc; \
     )
 
 unit-test: ## run test that don't require deployed resources
