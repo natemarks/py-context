@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""example test file
-
-
-"""
+"""example test file"""
 import pytest
 from src.show_env import print_python_info
+
 # from tests.helper import (
 #     case_data_path,
 #     update_data_file,
 #     read_json_data_file,
 # )
+
 
 @pytest.mark.unit
 def test_dummy():
@@ -20,6 +19,7 @@ def test_dummy():
 def test_print_env():
     print_python_info()
     assert True
+
 
 # @pytest.mark.unit
 # @pytest.mark.parametrize(
